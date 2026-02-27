@@ -6,6 +6,10 @@ import (
 
 // Normalize normalizes the percent-encoded parts of a string,
 //
+// (Note that Normalize does no percent-encode anything that is not already percent-encoded,
+// and does not percent-decode anything that is already percent-encoded.
+// It just focuses on whether the hexadecimal encoding is using upper-case letters 'A','B','C','D','E','F' or not.)
+//
 // Percent-Encoding Normalization is important, for example, if you want to determine if two percent-encoded strings are equal or not.
 //
 // For example, the following string:
