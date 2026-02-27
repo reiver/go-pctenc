@@ -54,6 +54,9 @@ import (
 // Plus more!
 //
 // Percent-Encoding Normalization picks a single unique percent-encoding for a each string.
+//
+// Normalize does not validate the string.
+// It just applies the normalization algorithm to the string.
 func Normalize(percentEncoded string) string {
 	var buffer [128]byte
 	var p []byte = buffer[0:0]
